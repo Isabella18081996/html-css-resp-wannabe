@@ -1,0 +1,173 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row>.left,
+#lezioni .row>.right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row>.left,
+#steps .row>.central,
+#steps .row>.right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row>.first,
+#why .row>.second,
+#why .row>.third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px
+}
+
+/* COMMON */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+
+@media (max-width: 420px) {
+
+ *{
+   margin: 0;
+   padding: 0;
+ }
+
+  #lezioni .row{
+    background-color: #F2F2CD;
+    }
+
+    .row{
+      width: 420px;
+      margin-top: 0;
+      margin-right: 0;
+      margin-left: 0;
+      
+    }
+
+    #lezioni .row .left{
+      width: 420px;
+      float: none;
+      margin:auto;
+      font-size: 13px;
+    }
+
+    #lezioni .row .right{
+      width: 420px;
+      float: none;
+      margin: auto;
+      font-size: 13px;
+    }
+
+   #lezioni .row .right img{
+     width: 150px;
+   }
+
+   #steps{
+     background-color: white;
+   }
+
+    #steps .row .left, #steps .row .central, #steps .row .right{
+      float: none;
+      margin-right: 0;
+      width: 420px;
+      font-size: 12px;
+    }
+
+    h1{
+      width: 420px;
+      margin: 0;
+      font-size: 25px;
+    }
+
+    #lezioni h1{
+      padding-top: 10px;
+    }
+
+    #steps h1{
+      margin-top: 10px;
+    }
+
+    #steps .row img{
+      width: 80px;
+    }
+
+   img{ width: 100px;
+    height: auto;
+    margin-top: 15px;
+    
+    }
+  
+    #why{
+      background-color: #F2F2CD;
+      padding-top: 10px;
+    }
+
+    #why .row .first, #why .row .second, #why .row .third{
+      width: 420px;
+      margin-right: 0;
+      /* background-color: #F2F2CD; */
+      margin-top: 0;
+      font-size: 12px;
+    }
+
+    hr{
+      margin: 0;
+    }
+
+    #why .row img{
+      width: 60px;
+      padding: 10px;
+      
+    }
+
+}
+
+
